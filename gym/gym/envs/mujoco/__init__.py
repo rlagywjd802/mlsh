@@ -1,4 +1,8 @@
 from gym.envs.mujoco.mujoco_env import MujocoEnv
+
+# Base class
+from gym.envs.mujoco.base_env import BaseEnv
+
 # ^^^^^ so that user gets the correct error
 # message if mujoco is not installed correctly
 from gym.envs.mujoco.ant import AntEnv
@@ -25,3 +29,14 @@ from gym.envs.mujoco.ant_obstaclesbig import AntObstaclesBigEnv
 from gym.envs.mujoco.ant_obstaclesgen import AntObstaclesGenEnv
 from gym.envs.mujoco.humanoid_course import HumanoidCourseEnv
 from gym.envs.mujoco.humanoid_seq import HumanoidSeqEnv
+
+# Walker2d
+from gym.envs.mujoco.walker2d import Walker2dEnv
+from gym.envs.mujoco.walker2d_forward import Walker2dForwardEnv
+from gym.envs.mujoco.walker2d_backward import Walker2dBackwardEnv
+from gym.envs.mujoco.walker2d_balance import Walker2dBalanceEnv
+from gym.envs.mujoco.walker2d_jump import Walker2dJumpEnv
+from gym.envs.mujoco.walker2d_crawl import Walker2dCrawlEnv
+from gym.envs.mujoco.walker2d_patrol import Walker2dPatrolEnv
+from gym.envs.mujoco.walker2d_hurdle import Walker2dHurdleEnv
+from gym.envs.mujoco.walker2d_obstacle_course import Walker2dObstacleCourseEnv

@@ -1,5 +1,62 @@
 from gym.envs.registration import registry, register, make, spec
 
+# Walker2d
+# ----------------------------------------
+register(
+    id='Walker2dForward-v1',
+    entry_point='gym.envs.mujoco:Walker2dForwardEnv',
+    max_episode_steps=500,
+)
+
+register(
+    id='Walker2dBackward-v1',
+    entry_point='gym.envs.mujoco:Walker2dBackwardEnv',
+    max_episode_steps=500,
+)
+
+register(
+    id='Walker2dBalance-v1',
+    entry_point='gym.envs.mujoco:Walker2dBalanceEnv',
+    max_episode_steps=1000,
+)
+
+register(
+    id='Walker2dJump-v1',
+    entry_point='gym.envs.mujoco:Walker2dJumpEnv',
+    max_episode_steps=500,
+)
+
+register(
+    id='Walker2dCrawl-v1',
+    entry_point='gym.envs.mujoco:Walker2dCrawlEnv',
+    max_episode_steps=500,
+)
+
+
+# Forward and backward
+register(
+    id='Walker2dPatrol-v1',
+    entry_point='gym.envs.mujoco:Walker2dPatrolEnv',
+    max_episode_steps=10000,
+)
+
+# Forward and jump
+register(
+    id='Walker2dHurdle-v1',
+    entry_point='gym.envs.mujoco:Walker2dHurdleEnv',
+    max_episode_steps=5000,
+)
+
+# Forward, jump and crawl
+register(
+    id='Walker2dObstacleCourse-v1',
+    entry_point='gym.envs.mujoco:Walker2dObstacleCourseEnv',
+    max_episode_steps=5000,
+)
+
+
+
+
 # Algorithmic
 # ----------------------------------------
 

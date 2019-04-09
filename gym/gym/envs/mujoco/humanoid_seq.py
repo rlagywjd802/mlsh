@@ -38,7 +38,7 @@ class HumanoidSeqEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         #                        data.qfrc_actuator.flat,
         #                        data.cfrc_ext.flat])
 
-    def _step(self, a):
+    def step(self, a):
         if self.count % 250 == 0:
             self.current = self.realgoal[int(self.count / 250)];
             # print("current is %d" % self.current)

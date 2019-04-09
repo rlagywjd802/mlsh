@@ -13,7 +13,7 @@ class AntMovementEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         self.realgoal = np.array([self.np_random.choice([1, 3])])
         # 0 = obstacle. 1 = no obstacle.
 
-    def _step(self, a):
+    def step(self, a):
         # print(self.data.qpos.shape)
         xposbefore = self.data.qpos[0,0] if (self.realgoal[0] == 0 or self.realgoal[0] == 1) else self.data.qpos[1,0]
         yposbefore = self.data.qpos[1,0] if (self.realgoal[0] == 0 or self.realgoal[0] == 1) else self.data.qpos[0,0]

@@ -14,7 +14,7 @@ class AntBanditsEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def viewer_setup(self):
         self.viewer.cam.trackbodyid = 0
 
-    def _step(self, a):
+    def step(self, a):
         self.do_simulation(a, self.frame_skip)
         vec = self.get_body_com("torso")-self.get_body_com("target")
         reward_dist = -np.sqrt(np.linalg.norm(vec)) / 3000

@@ -37,7 +37,7 @@ class HumanoidEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         #                        data.qfrc_actuator.flat,
         #                        data.cfrc_ext.flat])
 
-    def _step(self, a):
+    def step(self, a):
         self.timer += 1
 
         pos_before = mass_center(self.model)

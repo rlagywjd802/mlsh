@@ -15,7 +15,7 @@ class AntObstaclesGenEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         # 0 = obstacle. 1 = no obstacle.
         self.realgoal = 6
 
-    def _step(self, a):
+    def step(self, a):
         self.count += 1
 
         if self.count % 200 == 0:
