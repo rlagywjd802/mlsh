@@ -8,7 +8,7 @@ Code for [Meta-Learning Shared Hierarchies](https://s3-us-west-2.amazonaws.com/o
 ##### Installation
 
 ```
-Add to your .bash_profile (replace ... with path to directory):
+Add1 to your .bash_profile (replace ... with path to directory):
 export PYTHONPATH=$PYTHONPATH:/.../mlsh/gym;
 export PYTHONPATH=$PYTHONPATH:/.../mlsh/rl-algs;
 
