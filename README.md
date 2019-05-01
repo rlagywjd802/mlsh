@@ -16,7 +16,7 @@ Let’s denote meta-policy as 𝛳 and set of primitive policies as 𝜙 = {𝜙
 </p>
 
 <p align="center">
-  <img src="https://github.com/shashacks/master-robot/blob/master/images/equation.png" width="500" alt="{{ 22222222222222 }}">
+  <img src="https://github.com/shashacks/master-robot/blob/master/images/equation.png" width="500" alt="{{ 11111111111111 }}">
   <figcaption>{{ 11111111111111 }}</figcaption>
 </p>
 
